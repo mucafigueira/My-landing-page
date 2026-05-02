@@ -29,13 +29,13 @@ export default function Footer() {
                             <li><a href="#sobre" className="hover:text-primary">Sobre</a></li>
                             <li><a href="#servicos" className="hover:text-primary">Serviços</a></li>
                             <li><a href="#portfolio" className="hover:text-primary">Portfólio</a></li>
-                            <li><a href="#contato" className="hover:text-primary">Contato</a></li>
+                            <li><a href="#contato" className="hover:text-primary">Contacto</a></li>
                         </ul>
                     </div>
 
                     {/* CONTACT */}
                     <div classNaame="text-[1rem]">
-                        <h4 className="font-semibold mb-4">Contato</h4>
+                        <h4 className="font-semibold mb-4">Contacto</h4>
 
                         <div className="space-y-3 text-sm text-gray-300">
 
