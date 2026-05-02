@@ -69,7 +69,7 @@ export default function Hero() {
                     </div>
 
                     {/* PROVA RÁPIDA */}
-                    <div ref={ref} className={`text-gray-950 font-semibold flex  sm:flex-row sm:gap-6 gap-2 pt-6 sm:pt-8 text-xs sm:text-sm ${isVisible ? "reveal show" : "reveal"}`}>
+                    <div ref={ref} className={`text-gray-50 font-semibold flex  sm:flex-row sm:gap-6 gap-2 pt-6 sm:pt-8 text-xs sm:text-sm ${isVisible ? "reveal show" : "reveal"}`}>
                         <span>+20 projetos</span>
                         <span>Foco em ROI</span>
                         <span>Entrega rápida</span>

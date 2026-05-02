@@ -12,7 +12,7 @@ export default function useReveal() {
                     observer.disconnect();
                 }
             },
-            { threshold: 0.2 }
+            { threshold: 0.6 }
         );
 
         if (ref.current) observer.observe(ref.current);
