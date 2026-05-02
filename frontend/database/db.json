@@ -1,0 +1,26 @@
+{
+  "client": [
+    {
+      "id": "1",
+      "nome": "John Doe",
+      "email": "john.doe@example.com",
+      "telefone": "123-456-7890",
+      "mensagem": "Eu pretendo um projecto de web site para a minha empresa de construção civil. O site deve ser moderno, responsivo e fácil de navegar. Ele deve incluir uma seção de portfólio para mostrar os projetos anteriores, uma seção de serviços para descrever os serviços oferecidos, e uma seção de contato para que os clientes possam entrar em contato conosco facilmente."
+    },
+    {
+      "nome": "Manuel Francisco",
+      "email": "manuel@gmail.com",
+      "telefone": "935897600",
+      "mensagem": "Preciso de um projecto assiml",
+      "id": "1JpbDIBwmis"
+    },
+    {
+      "nome": "Jair Afonso Sancara",
+      "email": "sancara@hotmail.com",
+      "telefone": "921453989",
+      "mensagem": "O gostaria de uma consultoria para saber qual seria o melhor web site para a minha empresa",
+      "id": "e9DqnxPRj20"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

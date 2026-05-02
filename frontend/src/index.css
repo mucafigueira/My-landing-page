@@ -1,0 +1,48 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/*Criar utilitário de cores gradiente*/
+
+@layer utilities {
+
+    .text-gradient {
+        background: linear-gradient(135deg, rgb(0, 11, 34) 0%, rgb(41, 120, 247)100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; 
+    }
+
+    .line-gradient {
+        background: linear-gradient(135deg, rgb(0, 8, 25) 0%, rgb(18, 79, 234) 100%);
+    }
+
+    .radial-gradient {
+      background: radial-gradient(circle, rgb(18, 79, 234) 0%, rgb(0, 8, 25) 100%) 
+    }
+
+    .contactBg {
+      background: url("/fundo.webp")no-repeat center center/cover ;
+    }
+
+   /*Isto entra em conexão com o componente hooks*/
+  .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
