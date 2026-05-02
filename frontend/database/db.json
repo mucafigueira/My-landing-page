@@ -20,6 +20,13 @@
       "telefone": "921453989",
       "mensagem": "O gostaria de uma consultoria para saber qual seria o melhor web site para a minha empresa",
       "id": "e9DqnxPRj20"
+    },
+    {
+      "nome": "Manuel",
+      "email": "manuelm56@gmail.com",
+      "telefone": "923 445454",
+      "mensagem": "Logo a funcionar",
+      "id": "1Xlx08v9GDM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
