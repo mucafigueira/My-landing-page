@@ -34,6 +34,11 @@ section {
       background: url("/fundo.webp")no-repeat center center/cover ;
     }
 
+
+    .text-shadow{
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
    /*Isto entra em conexão com o componente hooks*/
   .reveal {
   opacity: 0;
