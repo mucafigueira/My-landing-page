@@ -51,8 +51,8 @@ export default function About() {
                     {/* IMAGEM */}
                     <div>
                         <img
-                            src="/share.webp"
-                            alt="Desenvolvedor trabalhando"
+                            src="/preview.webp"
+                            alt="Aguinaldo Muca  trabalhando"
                             className="w-full rounded-2xl shadow-xl"
                         />
                     </div>
