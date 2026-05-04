@@ -8,21 +8,21 @@ const testimonials = [
         role: "loja Online",
         message:
             "Depois do site e das campanhas, comecei a receber clientes todos os dias. Resultado absurdo.",
-        image: "/arao.jpg",
+        image: "/arao.webp",
     },
     {
         name: "Justino Adolfo Muqueienga",
         role: "Secretário",
         message:
             "O sistema facilitou totalmente minha operação. Hoje consigo vender muito mais com menos esforço.",
-        image: "/muqueienga.jpg",
+        image: "/muqueienga.webp",
     },
     {
         name: "West Bernardo",
         role: "Consultor",
         message:
             "Profissional direto ao ponto. Entregou rápido e com foco total em resultado.",
-        image: "/west.jpg",
+        image: "/west.webp",
     },
 ];
 

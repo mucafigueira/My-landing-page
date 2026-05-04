@@ -5,17 +5,17 @@ const projects = [
     {
         title: "Sistema integrado Cometic",
         description: "Página otimizada para conversão com foco em geração de leads.",
-        image: "/comitec.png"
+        image: "/comitec.webp"
     },
     {
         title: "Sistema de Finanças",
         description: "Dashboard completo para gestão de pedidos e clientes.",
-        image: "/sistemaWeb.png"
+        image: "/sistemaWeb.webp"
     },
     {
         title: "E-commerce",
         description: "Loja online com checkout otimizado e integração de pagamentos.",
-        image: "/ecomerce.png"
+        image: "/ecomerce.webp"
     },
 ];
 

@@ -11,13 +11,13 @@ export default function Hero() {
 
             <div className="absolute inset-0">
                 <img
-                    src="/bg-mobile.png"
+                    src="/bg-mobile.webp"
                     alt="background"
                     loading="eager"
                     className="block sm:hidden w-full h-full object-cover object-left-top"
                 />
                 <img
-                    src="/bg_Portfolio.png"
+                    src="/bg_Portfolio.webp"
                     alt="Dashboard ou projeto web"
                     loading="eager"
                     className="hidden sm:block w-full h-full object-cover"
