@@ -50,6 +50,7 @@ export default function Portfolio() {
                             <img
                                 src={project.image}
                                 alt={project.title}
+                                loading="lazy"
                                 className="w-full h-52 object-cover"
                             />
 
