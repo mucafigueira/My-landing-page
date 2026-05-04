@@ -23,7 +23,7 @@ export default function Contact() {
         setStatus(null);
 
         try {
-            const res = await fetch("https://my-landing-page-backend.onrender.com", {
+            const res = await fetch("https://my-landing-page-backend.onrender.com/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
