@@ -51,7 +51,7 @@ export default function About() {
                     {/* IMAGEM */}
                     <div>
                         <img
-                            src="/preview.webp"
+                            src="/about.webp"
                             alt="Aguinaldo Muca  trabalhando"
                             loading="lazy"
                             className="w-full rounded-2xl shadow-xl"
