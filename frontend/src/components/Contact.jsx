@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Container from "./Container";
-import { Mail } from "lucide-react";
+import { CircleDashed, Mail } from "lucide-react";
 
 export default function Contact() {
     const [form, setForm] = useState({
@@ -109,7 +109,12 @@ export default function Contact() {
                         disabled={loading}
                         className="btn line-gradient text-white border-none w-full rounded-md hover:scale-105 transition duration-300"
                     >
-                        {loading ? "Enviando..." : "Quero uma proposta"}
+                        {loading ? (
+                            <span className="flex items-center justify-center gap-2">
+                                <CircleDashed className="size-8 text-accent animate-spin" />
+                                Enviando...
+                            </span>
+                        ) : ("Quero uma proposta")}
                     </button>
 
                     {/* FEEDBACK */}
