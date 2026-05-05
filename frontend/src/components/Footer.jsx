@@ -51,13 +51,13 @@ export default function Footer() {
 
                             {/* SOCIALS */}
                             <div className="flex gap-4 pt-2">
-                                <a href="#" className="hover:text-primary">
+                                <a href="https://www.linkedin.com/in/aguinaldo-muca-figueira-6217b6131?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="hover:text-primary">
                                     <FaLinkedin size={20} />
                                 </a>
-                                <a href="#" className="hover:text-primary">
+                                <a href="https://github.com/mucafigueira" className="hover:text-primary">
                                     <FaGithub size={20} />
                                 </a>
-                                <a href="#" className="hover:text-green-600">
+                                <a href="https://wa.me/244934815201" className="hover:text-green-600">
                                     <FaWhatsapp size={20} />
                                 </a>
                             </div>
