@@ -35,7 +35,7 @@ export default function Hero() {
             <div className="relative z-10 w-full max-w-2xl px-4 sm:px-6 lg:px-8 py-8 sm:py-0">
                 <div className="space-y-4 md:absolute md:top-10 sm:absolute sm:top-10 sm:space-y-6">
                     {/* HEADLINE */}
-                    <h1 className="text-2xl  text-gray-50 md:mt-10 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                    <h1 className="text-2xl text-shadow text-blue-400 md:mt-10 sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                         Crio <span className="text-blue-950 font-bold text-gradient">websites e sistemas</span> que
                         realmente geram clientes
                     </h1>
