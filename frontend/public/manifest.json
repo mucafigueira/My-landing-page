@@ -1,12 +1,15 @@
 {
   "name": "agemuca",
   "short_name": "agemuca",
+  "description": "Descubra como colocar o sua empresa ou marca no mundo digital",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "orientation": "portrait",
-  "icons": [
+  "orientation": "portrait-primary",
+  "categories": ["utilities", "lifestyle"],
+  "screenshots": [
     {
       "src": "/icon-192.png",
       "sizes": "192x192",
@@ -17,5 +20,41 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Converter idade do gato",
+      "short_name": "Converter",
+      "description": "landing page para conversas sobre o seu projectos",
+      "url": "/?mode=converter",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false
 }

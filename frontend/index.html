@@ -14,12 +14,25 @@
     <meta property="og:image" content="https://agemuca.netlify.app/preview.webp" />
     <title> Desenvolvimento Web e Tráfego Pago | DevMuca</title>
 
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#ffffff" />
+    <!--Configurações para aplicativo android-->
+    <!-- Meta tags para PWA -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Descubra a idade do seu gato em anos humanos com a conversor IdadeMuca">
+<meta name="theme-color" content="#000000">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="agemuca">
+
+<!-- Links para PWA -->
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
 
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="/sw-register.js"></script>
   </body>
 </html>
