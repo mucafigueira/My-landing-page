@@ -4,6 +4,7 @@
   "description": "Descubra como colocar o sua empresa ou marca no mundo digital",
   "start_url": "/",
   "scope": "/",
+  "id": "/app/agemuca/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
