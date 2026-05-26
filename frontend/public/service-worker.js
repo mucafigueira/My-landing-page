@@ -2,34 +2,32 @@ const CACHE_NAME = 'agemuca-v1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
-  '/manifest.json',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/icon-maskable-192.png',
-  '/icon-maskable-512.png'
+  '/manifest.json'
 ];
 
-// Instalação do Service Worker
+// Instalação
 self.addEventListener('install', (event) => {
-  console.log('Service Worker instalado');
+  console.log('SW: Instalado');
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log('Arquivos armazenados em cache');
-      return cache.addAll(ASSETS_TO_CACHE);
+      return cache.addAll(ASSETS_TO_CACHE).catch(() => {
+        // Se falhar o cache, continua mesmo assim
+        console.warn(' Alguns arquivos não puderam ser cacheados');
+      });
     })
   );
   self.skipWaiting();
 });
 
-// Ativação do Service Worker
+// Ativação
 self.addEventListener('activate', (event) => {
-  console.log('Service Worker ativado');
+  console.log(' SW: Ativado');
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
           if (cacheName !== CACHE_NAME) {
-            console.log('Cache antigo removido:', cacheName);
+            console.log(' Cache antigo removido:', cacheName);
             return caches.delete(cacheName);
           }
         })
@@ -39,7 +37,7 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Fetch - Estratégia: Network First, Fall back to Cache
+// Fetch - Network First, Fall back to Cache
 self.addEventListener('fetch', (event) => {
   const { request } = event;
 
@@ -51,34 +49,20 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     fetch(request)
       .then((response) => {
-        // Clona a resposta para usar no cache
-        const responseClone = response.clone();
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(request, responseClone);
-        });
+        // Se resposta OK, cacheia
+        if (response.status === 200) {
+          const responseClone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(request, responseClone);
+          });
+        }
         return response;
       })
       .catch(() => {
-        // Se falhar, tenta do cache
+        // Falhou? Tenta cache
         return caches.match(request).then((cachedResponse) => {
           return cachedResponse || caches.match('/index.html');
         });
       })
   );
 });
-
-// Background Sync (opcional - para sincronizar dados offline)
-self.addEventListener('sync', (event) => {
-  if (event.tag === 'sync-dados') {
-    event.waitUntil(sincronizarDados());
-  }
-});
-
-async function sincronizarDados() {
-  try {
-    // Adicione sua lógica de sincronização aqui
-    console.log('Dados sincronizados');
-  } catch (error) {
-    console.error('Erro ao sincronizar:', error);
-  }
-}
