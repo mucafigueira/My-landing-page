@@ -8,7 +8,8 @@ export default function Navbar() {
             {/* LEFT */}
             <div className="flex-1">
                 <Link to="/" className="text-xl flex items-center  font-bold text-gradient">
-                    <Monitor />
+                    <Monitor className="text-red-600"
+                        />
                     DevMuca
                 </Link>
             </div>
